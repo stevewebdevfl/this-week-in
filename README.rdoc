@@ -1,6 +1,8 @@
 == README
 
-This application, "this-week-in", asks the user to choose from a selection of periodic publications, and to specify a specific issue (mm/yyyy or mm/dd/yyyy) of the publication.
+Currently, this application, "this-week-in", displays a summary of feature articles from an issue of National Geographic Magazine.
+
+The application will be built out to ask the user to choose from a selection of periodic publications, and to specify a specific issue (mm/yyyy or mm/dd/yyyy) of the publication.
 
 Upon entry of the publication and date, the user will see a summary of the contents of that issue.
 
