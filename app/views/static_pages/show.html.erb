@@ -1,18 +1,19 @@
 <!--  app/views/static_pages/show.html.erb -->
 
-<% if @length_mismatch %>
-  <%= @length_mismatch %>
+<% if @length_mismatch != "" %>
+ <%= @length_mismatch %>
 <% else %>
-  <% hedsub = [] %>
-  <% incr = 1 %>
+  <%= @title %>
+  <br></br>
+  <% incr_p = 1 %>
+  <% incr_l = 2 %>
   <% i = 0 %>
   <% begin %>
-    <% hedsub << @hed[i] %>
-    <% hedsub << @sub[i] %>
-    <% i += incr %>
-  <% end while i < @hed.length %>
-  <%= @title %>
-  <%= hedsub %>
-  <% end %>
+    <%= "---------- #{@hedsub[i]} ----------" %>
+    <br></br>
+    <%= @hedsub[i + incr_p] %>
+    <br></br>
+    <%#= @divline %>
+    <% i += incr_l %>
+  <% end while i < @hedsub.length %>
 <% end %>
-
